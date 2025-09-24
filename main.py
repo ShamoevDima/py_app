@@ -5,7 +5,7 @@ if type == "signed":
     binary = bin(number)[2:]
 elif type == "unsigned":
     if number < 0:
-        binary = bin((1 << 32) + number)[2:]
+        binary = bin((1 << 8) + number)[2:]
     else:
         binary = bin(number)[2:]
         
