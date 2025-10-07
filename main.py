@@ -1,12 +1,17 @@
-number = int(input("Enter a number: "))
-type = str(input("Enter a type (signed/unsigned): "))
+num = int(input('Enter number: '))
+type = str(input("Enter type (signed / unsigned): "))
 
-if type == "signed":
-    binary = bin(number)[2:]
-elif type == "unsigned":
-    if number < 0:
-        binary = bin((1 << 8) + number)[2:]
+if (type == 'unsigned'):
+    if (num >= 0):
+        binary = bin(num)[2:]
+        print(binary)
     else:
-        binary = bin(number)[2:]
-        
-print(f"Number: {binary}, Type: {type}")
+        print("Not a valid number")
+
+else:
+    if num >= 0:
+        binary = bin(num)[2:]
+        print(binary)
+    else:
+        binary = bin((1 << 8) + num)[2:]
+        print(binary)
