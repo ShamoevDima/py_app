@@ -1,5 +1,3 @@
-# Gauss
-
 import numpy as np
 
 def gaussMethod(matrix, ans):
