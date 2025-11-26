@@ -1,3 +1,4 @@
+import numpy as np
 
 def factorization(matrix):
     A = np.array(matrix)
